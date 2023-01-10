@@ -7,7 +7,7 @@ describe('to-do app', () => {
 
   it('check the title of the app', () => {
     const name='Available todos'
-    cy.get('.todo-header').parents('form').should('have.text',name)
+    cy.get('form').find('h3').should('eq',name)
     
   });
 
